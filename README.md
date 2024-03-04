@@ -1,5 +1,6 @@
 # COURSE EXERCICES FILES
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/NosisAtlas/cef_practical_app/Main)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nosisatlas/cef_practical_app/main)
+
 
 ## here you'll find the code of each section from 1 to 11
 

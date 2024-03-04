@@ -27,13 +27,46 @@ echo $_SESSION['greeting'];
 
 		Step 5: Instantiate the class / create object and call it pitbull
 
-Step 6: Call the method ShowAll
-
-	
-
-		
+		Step 6: Call the method ShowAll
+			
 	*/
+
+	// Define the Dog class
+	class Dog {
+		// Default vars
+		var $name = "waggy";
+		var $eyeColor = "green";
+		var $furColor = "brown";
+		// Running method
+		function Run(){
+			echo $this->name . " is running...";
+		}
+		// Showing all infos about the object method
+		function showAll(){
+			echo "This dog's name is " . $this->name . ", he has a " . $this->eyeColor . " eyes and has a " . $this->furColor . " fur.";
+		}
+	}
+
+	// Class inheritance for Golden Retriever breed
+	class GoldenRetriever extends Dog {
+		var $name = "Goldy";
+		var $furColor = "golden";
+		var $eyeColor = "black";
+	}
 	
+	// Instantiating the object
+	$dog = new Dog();
+	// Calling the running method
+	$dog->Run();
+	echo "<br>";
+	// Calling the showAll method
+	$dog->showAll();
+	echo "<br>";
+
+	// Instantiating the object
+	$golden = new GoldenRetriever();
+	// Calling the showAll method
+	$golden->showAll();
 	?>
 
 

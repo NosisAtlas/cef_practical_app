@@ -1,3 +1,8 @@
+<?php session_start();
+
+echo $_SESSION['greeting'];
+
+?>
 <?php include "functions.php" ?>
 <?php include "includes/header.php" ?>
 <section class="content">
